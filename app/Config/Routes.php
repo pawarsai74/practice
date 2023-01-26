@@ -29,6 +29,7 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
+
 $routes->get('/', 'Home::index');
 $routes->get('/get-data', 'Home::get_data');
 $routes->post('/add-member', 'Home::add_member');

@@ -37,7 +37,7 @@ class Home extends BaseController
     {
         $parents = new ParentsModel();
         $members = new MembersModel();
-
+//changes here
         $data = $parents->get_members();
         return $this->response->setJSON($data);
     }
